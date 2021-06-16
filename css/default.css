@@ -308,7 +308,7 @@ cursor:pointer;
     
 /* 푸터 영역 CSS */
 .footer{
-margin-top:104px;
+margin-top:24px;
 }
     
 .footer iframe{
@@ -657,6 +657,9 @@ header.masthead h1, header.masthead .h1 {
     text-align: center;
     font-family: Noto Serif KR;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .location-box01 {
     margin-bottom: 20px;
@@ -667,7 +670,8 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .location-box02 {
-    padding:24px 0;
+    padding:24px;
+    width: 90%;
     border:1px solid #333;
     margin:0 20px;
     border-radius:5px;
@@ -697,9 +701,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .location-box03 {
-    padding-top:30px;
-    padding-left:20px;
-    padding-right:20px;
+    padding : 30px 20px 20px 30px;
     text-align:center;
     display: inline-block;
 }
