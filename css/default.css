@@ -619,7 +619,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .second-container {
-    padding-top : 5%;
+    padding-top : 8%;
     padding-bottom: 5%;
     text-align: center;
     font-weight: 500;
@@ -807,6 +807,16 @@ header.masthead h1, header.masthead .h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.info-box {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: Noto Serif KR;
+    color: #333;
 }
 
 .swiper-container {
