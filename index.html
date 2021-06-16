@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="js/jquery.min.js"></script>
 <script src="js/indigo.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ce7cd533b30072dc1205dbde8fff6217"></script>
 </head>
 <body>
     <div id="wrap">
@@ -80,10 +81,10 @@
                         <p>2호선 <b>선릉역</b> 8번 출구 도보 7분</p>
                     </div>
                 </div>
+                <div id="map" style="width:500px;height:400px;"></div>
             </section>
         </section>
         <footer class="footer">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.111677235935!2d126.97473421573828!3d37.575987879796195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eaa19c763d%3A0xb28a32722d675764!2z6rSR7ZmU66y4KEd3YW5naHdhbXVuIEdhdGUp!5e0!3m2!1sko!2skr!4v1481946656451" frameborder="0" style="border:0" allowfullscreen></iframe>
             <p class="copyright">Copyright © 2021 - minhyung.han</p>
         </footer>
     </div>
@@ -92,11 +93,20 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.510338241328185, 127.0453156039292), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
     </script>
 </body>
 </html>

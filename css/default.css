@@ -591,6 +591,7 @@ header.masthead {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    min-height: 40vw;
 }
 header.masthead h1, header.masthead .h1 {
     font-size: 2.25rem;
@@ -602,7 +603,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 768px) {
     header.masthead {
-        min-height: 50vh;
+        min-height: 50vw;
     }
     header.masthead h1, header.masthead .h1 {
         font-size: 3rem;
@@ -610,7 +611,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 1024px) {
     header.masthead {
-        min-height: 60vh;
+        min-height: 60vw;
     }
     header.masthead h1, header.masthead .h1 {
         font-size: 3.5rem;
