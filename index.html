@@ -13,11 +13,11 @@
 <link href="images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 <link href="images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
 <link href="images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="js/jquery.min.js"></script>
 <script src="js/indigo.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ce7cd533b30072dc1205dbde8fff6217"></script>
+<link rel="stylesheet" href="css/photoswipe.css">
+<link rel="stylesheet" href="css/default-skin.css">
 </head>
 <body>
     <div id="wrap">
@@ -57,20 +57,136 @@
             </section>
             <hr class="divider">
             <section>
-                <div class="swiper-container mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="images/p-images/work01.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="images/p-images/work02.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="images/p-images/work02.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="images/p-images/work03.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="images/p-images/work04.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="images/p-images/work05.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="images/p-images/work06.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="images/p-images/work01.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="images/p-images/work02.jpg" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/01.jpg"
+                                        data-width="1779" data-height="1500" itemprop="contentUrl">
+                                        <!-- Thumbnail -->
+                                        <img src="images/thumb/01.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/02.jpg"
+                                        data-width="1460" data-height="1892" itemprop="contentUrl">
+                                        <img src="images/thumb/02.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/03.jpg"
+                                        data-width="1261" data-height="1892" itemprop="contentUrl">
+                                        <img src="images/thumb/03.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/04.jpg"
+                                        data-width="1000" data-height="1500" itemprop="contentUrl">
+                                        <img src="images/thumb/04.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/05.jpg"
+                                        data-width="1892" data-height="1261" itemprop="contentUrl">
+                                        <img src="images/thumb/05.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/06.jpg"
+                                        data-width="1390" data-height="1892" itemprop="contentUrl">
+                                        <img src="images/thumb/06.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/07.jpg"
+                                        data-width="2675" data-height="1891" itemprop="contentUrl">
+                                        <img src="images/thumb/07.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/08.jpg"
+                                        data-width="1261" data-height="1892" itemprop="contentUrl">
+                                        <img src="images/thumb/08.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/09.jpg"
+                                        data-width="1200" data-height="904" itemprop="contentUrl">
+                                        <img src="images/thumb/09.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/10.jpg"
+                                        data-width="1261" data-height="1892" itemprop="contentUrl">
+                                        <img src="images/thumb/10.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/11.jpg" data-width="1001"
+                                        data-height="1500" itemprop="contentUrl">
+                                        <img src="images/thumb/11.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                    <a href="images/full/12.jpg"
+                                        data-width="1892" data-height="1261" itemprop="contentUrl">
+                                        <img src="images/thumb/12.jpg" itemprop="thumbnail"
+                                            alt="Image description">
+                                    </a>
+                                </figure>
+                            </div>
+            
+                        </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
+                </div>
+
+    <div class="spacer"></div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
             </section>
             <section class="location-container">
                 <div class="location-box01">
@@ -160,16 +276,36 @@
             <p class="copyright">Copyright © 2021 - minhyung.han</p>
         </footer>
     </div>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src="js/photoswipe.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
+        'use strict';
+        (function ($) {
+            var container = [];
+            $('#gallery').find('figure').each(function () {
+                var $link = $(this).find('a'),
+                    item = {
+                        src: $link.attr('href'),
+                        w: $link.data('width'),
+                        h: $link.data('height'),
+                        title: $link.data('caption')
+                    };
+                container.push(item);
+            });
+            $('a').click(function (event) {
+                event.preventDefault();
+                var $pswp = $('.pswp')[0],
+                    options = {
+                        index: $(this).parent('figure').index(),
+                        bgOpacity: 0.85,
+                        showHideOpacity: true
+                    };
+                var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+                gallery.init();
+            });
+
+        }(jQuery));
 
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         var options = { //지도를 생성할 때 필요한 기본 옵션

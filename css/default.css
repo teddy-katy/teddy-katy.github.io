@@ -819,31 +819,38 @@ header.masthead h1, header.masthead .h1 {
     color: #333;
 }
 
-.swiper-container {
-    margin-top: 50px;
-}
 
-.swiper-slide {
+.pswp__caption__center {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
 }
 
-.swiper-slide img {
-    display: block;
-    object-fit: cover;
+figure {
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+.spacer {
+    height: 5em;
+}
+
+div.photoSwipe_innerthumbs {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000000;
+}
+
+div.photoSwipe_innerthumbs img {
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.svifaded {
+    opacity: 0.5;
 }
