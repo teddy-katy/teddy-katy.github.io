@@ -677,6 +677,7 @@ header.masthead h1, header.masthead .h1 {
     border-radius:5px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .location-text02 {
     font-weight:500;
