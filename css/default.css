@@ -631,7 +631,7 @@ header.masthead h1, header.masthead .h1 {
 
 .family-container {
     padding-top : 70px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -723,8 +723,8 @@ header.masthead h1, header.masthead .h1 {
 
 .location-text06 {
     margin: 10;
-    line-height:25px;
-    font-size: 16px;
+    line-height:20px;
+    font-size: 14px;
     font-weight: 500;
 }
 
