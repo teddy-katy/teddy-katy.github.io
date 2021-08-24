@@ -693,14 +693,14 @@ header.masthead h1, header.masthead .h1 {
     line-height:20px;
     font-size:12px;
     margin:0;
-    padding-top:5px;
+    padding-top:20px;
     word-break:keep-all
 }
 .location-text04 {
     font-size:12px;
     margin:0;
     line-height:20px;
-    padding-top:10px
+    padding-top:0px
 }
 
 .location-box03 {
@@ -712,6 +712,20 @@ header.masthead h1, header.masthead .h1 {
 .location-box04 {
     text-align: left;
     line-height: 1.5rem;
+}
+
+.location-text05 {
+    margin: 10;
+    line-height:30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.location-text06 {
+    margin: 10;
+    line-height:25px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .bank-container {
