@@ -564,13 +564,13 @@ margin-right:2.369668246445498%;
 
 .main-title01 {
     font-family: "Great Vibes", cursive;
-    font-size: 4.0vw;
+    font-size: 5.0vw;
     font-weight: 500;
 }
 
 .main-title02 {
     font-family: 'Gugi', cursive;
-    font-size: 1.5vw;
+    font-size: 3vw;
     font-weight: 500;
 }
 
@@ -593,30 +593,24 @@ header.masthead {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    min-height: 40vw;
+    min-height: 50vw;
 }
 header.masthead h1, header.masthead .h1 {
     font-size: 2.25rem;
 }
 @media (min-width: 320px) {
     header.masthead .main-title01 {
-        font-size: 5.0vw;
+        font-size: 7vw;
     }
 }
 @media (min-width: 768px) {
     header.masthead {
-        min-height: 50vw;
-    }
-    header.masthead h1, header.masthead .h1 {
-        font-size: 3rem;
+        min-height: 60vw;
     }
 }
 @media (min-width: 1024px) {
     header.masthead {
-        min-height: 60vw;
-    }
-    header.masthead h1, header.masthead .h1 {
-        font-size: 3.5rem;
+        min-height: 65vw;
     }
 }
 
@@ -808,6 +802,7 @@ header.masthead h1, header.masthead .h1 {
     color: #333;
     width: 34px;
 }
+
 .bank-iconbox03 {
     display: flex;
     align-items: center;
@@ -829,7 +824,7 @@ header.masthead h1, header.masthead .h1 {
     padding-top: 25px;
     text-align: center;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 30px;
     font-weight: 500;
     font-family: Noto Serif KR;
     color: #333;
