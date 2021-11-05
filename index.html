@@ -1,6 +1,5 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -20,7 +19,6 @@
     <script src="js/indigo.min.js"></script>
     <script type="text/javascript"
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b312f518111626c10e8f632c02b7cb20"></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <link rel="stylesheet" href="css/photoswipe.css">
     <link rel="stylesheet" href="css/default-skin.css">
 </head>
@@ -281,7 +279,7 @@
                     </div>
                     <div class="bank-box06">
                         <div style="display: inline-block;">
-                            <a href="https://qr.kakaopay.com/281006011000084593919078" class="bank-iconbox03">
+                            <a href="https://qr.kakaopay.com/281006011193039511006563" class="bank-iconbox03">
                                 <img src="./images/icon/kakaopay.png" class="bank-img">
                             </a>
                         </div>
@@ -294,7 +292,6 @@
                 </div>
             </div>
         </section>
-<!--        <div id="kakao-link-btn">test</div>-->
     </div>
 
     <script src="js/photoswipe-ui-default.min.js"></script>
@@ -340,13 +337,13 @@
             position: markerPosition
         });
 
-        marker.setMap(map);
+        // 마커에 클릭이벤트를 등록합니다
+        kakao.maps.event.addListener(marker, 'click', function() {
+            // 마커 위에 인포윈도우를 표시합니다
+            window.open("http://kko.to/JrG_t6gfo","_self");
+        });
 
-        // Kakao.init('b312f518111626c10e8f632c02b7cb20');
-        // Kakao.Link.createCustomButton({
-        //     container: "#kakao-link-btn",
-        //     templateId: 64791,
-        // });
+        marker.setMap(map);
     </script>
 </body>
 
