@@ -19,7 +19,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/indigo.min.js"></script>
     <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ce7cd533b30072dc1205dbde8fff6217"></script>
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b312f518111626c10e8f632c02b7cb20"></script>
     <link rel="stylesheet" href="css/photoswipe.css">
     <link rel="stylesheet" href="css/default-skin.css">
 </head>
@@ -47,13 +47,12 @@
                         에베소서 5장 말씀을 함께 가슴에 새기며,<br>
                         한 가정을 이루게 되었습니다.<br><br>
                         두 사람의 출발과 앞날을<br>
-                        가까이에서 축복해 주시면 감사하겠습니다.<br><br>
-                        THE WEDDING CELEBRATION
+                        가까이에서 축복해 주시면 감사하겠습니다.
                     </p>
                     <div class="family-container">
                         <div class="family-info">
-                            <p>권영식 · 정애란<span class="f-desc">의 장남</span><span>오빈</span></p>
-                            <p>김원진 · 이경란<span class="f-desc">의 장녀</span><span>태경</span></p>
+                            <p>권영식 · 정애란<span class="f-desc">의 장남</span><span>권오빈</span></p>
+                            <p>김원진 · 이경란<span class="f-desc">의 장녀</span><span>김태경</span></p>
                         </div>
                     </div>
                 </div>
@@ -78,14 +77,6 @@
                         </div>
                         <div style="margin-top: 15px;">
                             <p>어머니 정애란</p>
-                            <div class="bank-box05">
-                                <a href="tel:010-8011-6250" class="bank-iconbox">
-                                    <img src="./images/icon/call_black.png" width="34px">
-                                </a>
-                                <a href="sms:010-8011-6250" class="bank-iconbox02">
-                                    <img src="./images/icon/sms_black.png" width="34px">
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div style="flex: 1;">
@@ -105,15 +96,7 @@
                             <p>아버지 김원진</p>
                         </div>
                         <div style="margin-top: 15px;">
-                            <p>어머니 이기진</p>
-                            <div class="bank-box05">
-                                <a href="tel:010-6321-1574" class="bank-iconbox">
-                                    <img src="./images/icon/call_black.png" width="34px">
-                                </a>
-                                <a href="sms:010-6321-1574" class="bank-iconbox02">
-                                    <img src="./images/icon/sms_black.png" width="34px">
-                                </a>
-                            </div>
+                            <p>어머니 이경란</p>
                         </div>
                     </div>
                 </div>
@@ -248,10 +231,13 @@
                         <p class="location-text06">3호선 신사역에서 하차후, 5번 출구, 도보 3분<br>
                         <p class="location-text05">버스 이용 시</p>
                         <p class="location-text06">
-                            -간선 142, 145, 148, 240, 441, 54<br>
-                            -지선 4212, 4412, 강남08, 서초03<br>
-                            -광역 1100, 3030, 8001, 9202, 9404, 9700<br>
+                            - 간선 142, 145, 148, 240, 441, 54<br>
+                            - 지선 4212, 4412, 강남08, 서초03<br>
+                            - 광역 1100, 3030, 8001, 9202, 9404, 9700, M7412<br>
+                            각 정류장에서 하차후, 도보 5~13분 거리
                         </p>
+                        <p class="location-text05">자차 이용 시</p>
+                        <p class="location-text06">발렛파킹 서비스 운영</p>
                     </div>
                 </div>
             </section>
@@ -272,7 +258,7 @@
                     </div>
                     <div class="bank-box06">
                         <div style="display: inline-block;">
-                            <a href="https://qr.kakaopay.com/281006011000042762015842" class="bank-iconbox03">
+                            <a href="https://qr.kakaopay.com/281006011000048912176200" class="bank-iconbox03">
                                 <img src="./images/icon/kakaopay.png" class="bank-img">
                             </a>
                         </div>
@@ -307,6 +293,7 @@
                 </div>
             </div>
         </section>
+        <div id="btnKakao"> <img src="/img/sns_kakao.png" id="kakao-link-btn" alt="카카오톡 링크 공유하기"> </div>
     </div>
 
     <script src="js/photoswipe-ui-default.min.js"></script>
@@ -341,19 +328,18 @@
 
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(37.510338241328185, 127.0453156039292), //지도의 중심좌표.
-            level: 3 //지도의 레벨(확대, 축소 정도)
+            center: new kakao.maps.LatLng(37.51855820287778, 127.01806488426467), // 지도의 중심좌표
+            level: 5 //지도의 레벨(확대, 축소 정도)
         };
 
         var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 
-        var markerPosition = new kakao.maps.LatLng(37.510338241328185, 127.0453156039292)
+        var markerPosition = new kakao.maps.LatLng(37.51855820287778, 127.01806488426467)
         var marker = new kakao.maps.Marker({
             position: markerPosition
         });
 
         marker.setMap(map);
-
     </script>
 </body>
 
