@@ -724,6 +724,17 @@ header.masthead h1, header.masthead .h1 {
     margin-bottom: 15px;
 }
 
+.map-icon {
+    text-align: right;
+    margin-top: 6px;
+    margin-left: -6px;
+    margin-right: -6px;
+}
+.map-icon img{
+    width: 48px;
+    padding: 6px;
+}
+
 .bank-container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -734,6 +745,7 @@ header.masthead h1, header.masthead .h1 {
     flex-direction: column;
     align-items: center;
 }
+
 .bank-text01 {
     font-size: 16px;
     font-weight: 600;
@@ -831,7 +843,11 @@ header.masthead h1, header.masthead .h1 {
     font-family: Noto Serif KR;
     color: #333;
 }
-
+.disqus_container {
+    padding: 50px;
+    text-align: center;
+    font-family: Noto Serif KR;
+}
 
 .pswp__caption__center {
     text-align: center;
