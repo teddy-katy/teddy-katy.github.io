@@ -21,6 +21,15 @@
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b312f518111626c10e8f632c02b7cb20"></script>
     <link rel="stylesheet" href="css/photoswipe.css">
     <link rel="stylesheet" href="css/default-skin.css">
+    <script>
+        <!-- YOUR_BROWSER_SDK_KEY 자리에 SDK 키를 넣습니다. -->
+        HACKLE_SDK_KEY = "JNK7P6SQBLLtaL9Lu8goYNBqLdva4bU3";
+    </script>
+    <script>
+        !function(e,t){var n,a=3e3,c=!1,l=[];function r(){}r.prototype.onReady=function(e,t){var n={block:e,timeout:t};l.push(n)},r.prototype.setUserId=function(e){n=e},e.Hackle=e.Hackle||new r,e.hackleClient=e.hackleClient||new r;var o=setInterval(function(){if(c){clearInterval(o);for(var t=0;t<l.length;t++)
+            e.hackleClient.onReady(l[t].block,l[t].timeout);l.length=0}(a-=50)<0&&clearInterval(o)},50),i=t.createElement("script");i.type="text/javascript",i.crossOrigin="anonymous",i.src="https://cdn.jsdelivr.net/npm/@hackler/js-client-sdk@2.2.0/lib/umd/hackle-js-client-sdk.min.js",
+            i.async=!0;var s=t.getElementsByTagName("script")[0];s.parentNode.insertBefore(i,s),i.onload=function(){c=!0,e.Hackle=Hackle,n&&Hackle.setUserId(n),e.hackleClient=Hackle.createInstance(HACKLE_SDK_KEY)},i.onerror=function(){clearInterval(o)}}(window,document);
+    </script>
 </head>
 
 <body>
@@ -339,7 +348,9 @@
             });
 
         }(jQuery));
-
+        hackleClient.onReady(() => {
+            hackleClient.track({ key: "wedding_view", properties: {"lang": "ko"} })
+        });
         // var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         // var options = { //지도를 생성할 때 필요한 기본 옵션
         //     center: new kakao.maps.LatLng(37.51855820287778, 127.01806488426467), // 지도의 중심좌표
